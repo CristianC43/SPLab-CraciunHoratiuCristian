@@ -1,18 +1,32 @@
 package project;
 
+import java.util.ArrayList;
+
 public class Book {
 	public String title;
-	public Chapter[] chapters;
-	public Author author;
+	public ArrayList<Author> authors;
+	public ArrayList<Element> elements;
 	
-	public Book(String title, Chapter[] chapters, Author author) {
+	public Book(String title) {
 		this.title = title;
-		this.chapters = chapters;
-		this.author = author;
+		this.authors = new ArrayList<Author>();
+		this.elements= new ArrayList<Element>();
+	}
+	
+	void addAuthor(Author a) {
+		this.authors.add(a);
+	}
+	
+	void addContent(Element e) {
+		elements.add(e);
 	}
 	
 	public void print() {
-		for(Chapter ch: chapters) System.out.println(ch);
-
+		System.out.println(this.title);
+		System.out.println(this.authors);
+		for(Element e: elements) {
+			e.print();
+		}
 	}
 }
+	

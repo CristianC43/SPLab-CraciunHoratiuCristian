@@ -2,16 +2,15 @@ package project;
 
 public class Author {
 	public String name;
-	public Book[] books;
+	public String surname;
 	
-	public Author(String name, Book[] books) {
+	public Author(String name, String surname) {
 		this.name = name;
-		for(int i = 0; i < books.length; i++) {
-			this.books[i] = books[i];
-		}
+		this.surname = surname;
 	}
-	void print() {
-		System.out.println("Metoda Author");
+
+	public void print() {
+		System.out.print(this.name + " " + this.surname);
 	}
 		
 }

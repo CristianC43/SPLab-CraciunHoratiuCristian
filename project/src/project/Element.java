@@ -1,5 +1,5 @@
 package project;
 
-public abstract class Element {
-	public void print() {}
+public interface Element {
+	public void print();
 }
