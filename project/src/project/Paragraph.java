@@ -10,4 +10,8 @@ public class Paragraph implements Element{
 	public void print() {
 		System.out.println(this.text);
 	}
+	
+	public void setAlign(String text, AlignStrategy context) {
+		this.text = context.render(text);
+	}
 }
