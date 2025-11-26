@@ -11,7 +11,7 @@ public class Paragraph implements Element{
 		System.out.println(this.text);
 	}
 	
-	public void setAlign(String text, AlignStrategy context) {
-		this.text = context.render(text);
+	public void setAlignStrategy(AlignStrategy context) {
+		this.text = context.render(this.text);
 	}
 }
