@@ -12,7 +12,6 @@ public class RequestLoggingFilter implements Filter {
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
             throws IOException, ServletException {
-
         HttpServletRequest req = (HttpServletRequest) request;
         System.out.println("[LOG BEFORE] " + req.getMethod() + " " + req.getRequestURI() + " at " + LocalDateTime.now());
 
