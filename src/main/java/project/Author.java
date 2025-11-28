@@ -1,4 +1,4 @@
-package project;
+package main.java.project;
 
 public class Author {
 	public String name;

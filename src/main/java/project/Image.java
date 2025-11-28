@@ -1,4 +1,4 @@
-package project;
+package main.java.project;
 
 public class Image implements Element{
 	public String imageName;

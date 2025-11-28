@@ -1,4 +1,4 @@
-package project;
+package main.java.project;
 
 public class AlignLeft implements AlignStrategy{
 

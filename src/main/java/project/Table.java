@@ -1,4 +1,4 @@
-package project;
+package main.java.project;
 
 public class Table implements Element{
 	public String title;
